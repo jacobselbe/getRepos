@@ -21,7 +21,7 @@ function getUser(user) {
     const endpoint = `https://api.github.com/users/:${user}/repos`;
     fetch(endpoint)
         .then(response => response.json())
-        // .then(responseJson.articles => displayRepos(responseJson.articles))//??????
+        // .then(responseJson.articles => displayRepos(responseJson.articles))//fat arrow not working?
         .catch(error => console.log(error));
 }
 
@@ -30,7 +30,7 @@ function getUser(user) {
     //update html
 function displayRepos(response) {
     console.log(response);
-    $('#js-results').html(``);
+    $('#js-results').html(``);//complete this
 }
 
 //set page(watch form and print page ready)
