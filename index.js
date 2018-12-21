@@ -30,7 +30,7 @@ function getUser(user) {
     //update html
 function displayRepos(response) {
     console.log(response);
-    $('#js-results').html(``);//complete this asap
+    $('#js-results').html(``);//complete this 
 }
 
 //set page(watch form and print page ready)
